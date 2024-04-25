@@ -1,0 +1,116 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-content {
+  width: 90%;
+  max-width: 450px;
+  height: 770px;
+  background-color: #ffffff46;
+  padding: 50px 60px 70px;
+  text-align: center;
+  border-radius: 25px;
+  margin: 5vh auto;
+  border: 1px solid #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .form-content {
+    width: 70%;
+  }
+}
+
+.form-content h1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 60px;
+  color: #e1ecff;
+  text-shadow: 0 0 5px #002664, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0041a9,
+    0 0 80px #0041a9, 0 0 90px #ff0000, 0 0 100px #5890ea, 0 0 150px #0041a9;
+  position: relative;
+}
+
+.form-content h1::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 3px;
+  background: #0041a9;
+  box-shadow: 0 8px 10px 0 rgba(255, 255, 255, 0.847);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-field {
+  background-color: #cfcfcf;
+  margin: 5px 0;
+  border-radius: 10px !important;
+  display: flex;
+  align-items: center;
+  transition: max-heigth 0.5s;
+  overflow: hidden;
+}
+
+input {
+  width: 300px;
+  background: transparent;
+  border: 0;
+  outline: none;
+  padding: 18px 15px;
+  color: #000000;
+  border-radius: 10px !important;
+}
+
+input::placeholder {
+  color: #0000009b;
+}
+
+.input-field i {
+  margin-left: 15px;
+  color: #0041a9;
+}
+
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-field button {
+  flex-basis: 48%;
+  font-size: 16px;
+  background-color: #0041a9;
+  color: #fff;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+  position: relative;
+  top: 260px;
+}
+
+.btn-field button:hover {
+  background-color: #2377ff;
+}
+
+.input-group {
+  height: 250px;
+  margin: auto;
+}
+
+.btn-field button.clear {
+  background-color: #eaeaea;
+  color: #2c2f35;
+}
+
+.btn-field button.clear:hover {
+  background-color: #6b6b6b;
+  color: #fff;
+}
